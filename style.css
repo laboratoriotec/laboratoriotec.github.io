@@ -1,0 +1,364 @@
+/* Core Styles */
+
+body {
+  margin: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #393E46;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bodyimg {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00ADB5;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: none;
+  margin: 1.5em 0;
+  width: 130px;
+  height: 25px;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* Header Showcase */
+
+#showcase {
+  min-height: 450px;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #393E46
+    url("/Recursos/main.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase .card1 {
+  position: absolute;
+  background: #393E46
+    url("/Recursos/card1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase .card2 {
+  position: absolute;
+  background: #393E46
+    url("/Recursos/card2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#showcase .card3 {
+  position: absolute;
+  background: #393E46
+    url("/Recursos/card3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#showcase .cardmysterium {
+  position: absolute;
+  background: #393E46
+    url("/proyectos/mysterium/cardmysterium.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#showcase .cardelastic {
+  position: absolute;
+  background: #393E46
+    url("/proyectos/elastic/cardelastic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 1;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/* Section A */
+
+#section-a {
+  background: #EEEEEE;
+  color: #393E46;
+  padding-bottom: 2em;
+}
+
+/* Section B */
+
+#section-b {
+  padding: 2em 1em 2em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 1em;
+  padding: 1em;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #EEEEEE;
+  color: #393E46;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+/* Section C */
+
+#section-c {
+  background: #EEEEEE;
+  color: #393E46;
+  padding: 2em;
+}
+
+/* Section D / Boxes */
+
+#section-d {
+  background: #EEEEEE;
+}
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+  background: #00ADB5;
+  border-radius: 15px;
+}
+
+#section-d .box:first-child {
+  background: #393E46;
+}
+
+/* Footer */
+
+#main-footer {
+  padding: 2em;
+  background: #222831;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}
+
+/* paypal */
+
+.paypal-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.paypal-link img {
+  width: 100px; /* Ajusta el tamaño del icono según sea necesario */
+  height: auto;
+}
+
+.descargar-pdf {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.descargar-pdf img {
+  width: 100px; /* Ajusta el tamaño del icono según sea necesario */
+  height: auto;
+}
+
+a {
+  color: inherit; /* Hereda el color del texto de su contenedor */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.texto-peq {
+  font-size: 10px; /* Tamaño de letra más pequeño */
+}
+
+
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Páginas en construcción */
+
+.decode-text {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+.space {
+  display: inline-block;
+  width: 10px;
+}
+.text-animation {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  text-transform: uppercase;
+  &:before {
+    content: "";
+    color: #393E46;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #222831;
+    width: 0;
+    height: 1.2em;
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+  }
+
+  &.state-1 {
+    &:before {
+      width: 1px;
+    }
+  }
+  &.state-2 {
+    &:before {
+      width: 0.9em;
+    }
+  }
+  &.state-3 {
+    color: #EEEEEE;
+    &:before {
+      width: 0;
+    }
+  }
+}
+
+/* demo styles*/
+#refresh {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+div {
+  font-family: "Share Tech Mono", monospace;
+}
+
