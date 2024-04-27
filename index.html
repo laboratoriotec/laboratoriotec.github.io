@@ -1,8 +1,126 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Laboratorio Tech: diseño web y proyectos tecnológicos.</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Laboratorio Tech: Expertos en diseño y servicios web, desarrollo de aplicaciones multiplataforma, proyectos tecnológicos innovadores y servicios comerciales.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/Recursos/favicon1.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/Recursos/favicon1.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Recursos/icotouch.png">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
 
-<html>
 
-<h1>Prueba</h1>
+<!-- Header Showcase -->
+<header id="showcase" class="grid">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+    <h1>Bienvenido a Laboratorio Tech</h1>
+    <p style="text-align: center;">"La tecnología no es nada. Lo importante es que tengas fe en la gente, que sean básicamente buenas e inteligentes, y si les das herramientas, harán cosas maravillosas con ellas."</p>
+    <a href="index.html" class="btn"><b>Inicio</b></a>
+    <a href="desarrollo.html" target="_blank" class="btn"><b>Desarrollo</b></a>
+    <a href="archivo.html" target="_blank" class="btn"><b>Archivo</b></a>
+    <a href="proyectos.html" target="_blank" class="btn"><b>Proyectos</b></a>
+  </div>
+</header>
 
+<!-- Main Area -->
+<main id="main">
+  <!-- Section A -->
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Desarrollo web, Aplicaciones y Servicios comerciales</h2>
+      <div class="content-text">
+        <p style="text-align: center">Creación y mantenimiento de páginas web, servicios SEO para mejorar el posicionamiento web en buscadores, campañas de email marketing, correo electrónico corporativo, gestión de certificados SSL, soluciones profesionales y consultoría tecnológica en general.</p>
+        <p style="text-align: center"><b>¡Si puedes pensarlo, podemos crearlo juntos!</b></p>
+        <p style="text-align: center">Mándanos un correo electrónico con tu petición a info@laboratoriotech.es y nosotros te llamamos sin ningún tipo de compromiso.</p>
+        <p class="texto-peq">(Servicio de correo electrónico monitorizado los siete días de la semana)</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Section B -->
+  <section id="section-b" class="grid">
+    <ul>
+      <li>
+        <div class="card">
+          <a href="desarrollo.html" target="_blank"><img src="/Recursos/card1.jpeg" alt=""></a>
+          <div class="card-content">
+            <h3 style="text-align: center;" class="card-title"><a href="desarrollo.html" target="_blank"><b>Desarrollo</b></a></h3>
+            <p style="text-align: center;">Transformamos las ideas en realidad. Descubre como podemos hacer brillar tu proyecto y ahorrar costes asociados a los servicios tecnológicos.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <a href="archivo.html" target="_blank"><img src="/Recursos/card2.jpeg" alt=""></a>
+          <div class="card-content">
+            <h3 style="text-align: center;" class="card-title"><a href="archivo.html" target="_blank"><b>Archivo</b></a></h3>
+            <a href="archivo.html" target="_blank"><p style="text-align: center;">Tutoriales, clases, noticias, etcétera. Para aprender y mejorar habilidades digitales. Una pequeña biblioteca de conocimiento abierta a todo el mundo.</p></a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <a href="proyectos.html" target="_blank"><img src="/Recursos/card3.jpeg" alt=""></a>
+          <div class="card-content">
+            <h3 style="text-align: center;" class="card-title"><a href="proyectos.html" target="_blank"><b>Proyectos</b></a></h3>
+            <p style="text-align: center;">Descubre interesantes ideas. Y con tu ayuda, podremos desarrollar esta sección más rápidamente. Os invitamos a participar con propuestas y/o financiación.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section C -->
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Transformamos tus ideas en realidad, paso a paso.</h2>
+      <p style="text-align: center;">En nuestro equipo, estamos listos para convertir tus planes en realidad. Desde sitios web innovadores hasta aplicaciones y soluciones profesionales personalizadas, trabajamos contigo para materializar tus ideas y alcanzar tus objetivos sin que la inversión en tecnología suponga un obstáculo. Buscamos la máxima eficiencia al menor coste posible. Software, hardware, licencias, mantenimiento, actualización, consultoría, ciberseguridad, etc.; estaremos encantados de ayudarte.</p>
+    </div>
+  </section>
+
+  <!-- Section D -->
+  <section id="section-d" class="grid">
+    <div class="box">
+      <h2 class="content-title">Sobre nosotros</h2>
+      <p style="text-align: center;">Informáticos por formación, pero sobre todo por vocación. Nos encanta aprender y afrontar nuevos retos. Llevamos toda la vida vinculados al mundo de la informática y si no podemos hacer algo, por falta de tiempo o estructura, asesoramos y recomendamos a los mejores profesionales para llevarlo a cabo.</p>
+      
+    </div>
+    <div class="box">
+      <h2 class="content-title">Contacto</h2>
+      <p style="text-align: center;">No dudes en contactarnos si deseas información sobre alguno de nuestros servicios, asesoramiento tecnológico o cualquier tipo de duda. Mándanos un correo electrónico y nosotros te llamamos.</p>
+      <p style="text-align: center;">info@laboratoriotech.es</p>
+      <p class="texto-peq">(Servicio de correo electrónico monitorizado los siete días de la semana)</p>
+    </div>
+  </section>
+</main>
+
+<?php
+// Incluye el archivo procesar_formulario.php
+require_once "procesar_formulario.php";
+?>
+
+
+<form action="formulario.php" method="post">
+  Nombre: <input type="text" name="nombre"><br>
+  Correo electrónico: <input type="email" name="email"><br>
+  Mensaje: <textarea name="mensaje"></textarea><br>
+  <input type="submit" value="Enviar">
+</form>
+
+
+
+<!-- Footer -->
+
+<footer id="main-footer">
+  <p style="text-align: center;">© <span id='year'></span> laboratoriotech.es | Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </html>
