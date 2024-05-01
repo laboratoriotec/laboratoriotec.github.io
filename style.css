@@ -37,6 +37,7 @@ p {
   padding: 1em 0;
 }
 
+
 .btn {
   display: inline-block;
   background-color: #00ADB5;
@@ -217,6 +218,15 @@ p {
   background: #393E46;
 }
 
+/* Section E */
+
+#section-e {
+  background: #EEEEEE;
+  text-align: left;
+}
+
+
+
 /* Footer */
 
 #main-footer {
@@ -361,4 +371,6 @@ a {
 div {
   font-family: "Share Tech Mono", monospace;
 }
+
+/* Section E */
 
