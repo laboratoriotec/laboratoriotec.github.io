@@ -37,6 +37,9 @@ p {
   padding: 1em 0;
 }
 
+ul {
+  list-style-type: none;
+}
 
 .btn {
   display: inline-block;
