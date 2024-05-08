@@ -25,7 +25,7 @@ img {
   border-bottom-right-radius: 15px;
 }
 
-imgstd {
+.imgstd {
   display: block;
   width: 100%;
   height: auto;
