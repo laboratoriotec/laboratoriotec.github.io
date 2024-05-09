@@ -25,6 +25,16 @@ img {
   border-bottom-right-radius: 15px;
 }
 
+.imgstd {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 h1,
 h2,
 h3 {
