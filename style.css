@@ -25,16 +25,6 @@ img {
   border-bottom-right-radius: 15px;
 }
 
-.imgstd {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
 h1,
 h2,
 h3 {
@@ -47,9 +37,7 @@ p {
   padding: 1em 0;
 }
 
-ul {
-  list-style-type: none;
-}
+
 
 .btn {
   display: inline-block;
@@ -231,14 +219,6 @@ ul {
   background: #393E46;
 }
 
-/* Section E */
-
-#section-e {
-  background: #EEEEEE;
-  text-align: left;
-}
-
-
 
 /* Footer */
 
@@ -319,7 +299,6 @@ a {
 }
 
 
-
 .centered-image {
   display: block;
   margin: 0 auto;
@@ -385,5 +364,4 @@ div {
   font-family: "Share Tech Mono", monospace;
 }
 
-/* Section E */
 
