@@ -163,6 +163,45 @@ p {
   opacity: 0.3;
 }
 
+#showcase .disenweb {
+  position: absolute;
+  background: #393E46
+    url("/desarrollo/disenweb.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#showcase .apli {
+  position: absolute;
+  background: #393E46
+    url("/desarrollo/aplicaciones.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#showcase .solcum {
+  position: absolute;
+  background: #393E46
+    url("/desarrollo/soluciones_comerciales.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
 
 #showcase h1 {
   padding-top: 100px;
