@@ -65,6 +65,7 @@ function buscarContenedor() {
         var contenedorInfo = materiales[material];
         if (contenedorInfo.esReciclaje === false) {
             resultado.innerHTML = "Para el material '" + material + "', el contenedor adecuado es el " + contenedorInfo.contenedor + ".";
+            resultado.innerHTML += "<div class='circle' style='background-color: " + contenedorInfo.color + ";'></div>";
         } else if (contenedorInfo.icon) {
             resultado.innerHTML = "Para el material '" + material + "', el lugar adecuado es depositarlo en un " + contenedorInfo.contenedor + ".";
             resultado.innerHTML += "<div class='icon'><img src='" + contenedorInfo.icon + "' alt='Punto Verde'></div>";
@@ -97,4 +98,5 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
 
