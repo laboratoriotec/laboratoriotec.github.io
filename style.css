@@ -170,6 +170,19 @@ ul {
   opacity: 0.3;
 }
 
+#showcase .cardpython {
+  position: absolute;
+  background: #393E46
+    url("/proyectos/python/python-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
 #showcase h1 {
   padding-top: 100px;
   padding-bottom: 1;
