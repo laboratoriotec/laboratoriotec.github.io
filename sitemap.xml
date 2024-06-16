@@ -37,9 +37,16 @@
 
    <url>
       <loc>https://laboratoriotec.github.io/apliwebjs.html</loc>
-      <lastmod>2024-05-19</lastmod>
+      <lastmod>2024-06-16</lastmod>
       <changefreq>yearly</changefreq>
       <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://laboratoriotec.github.io/pythonmaps.html</loc>
+      <lastmod>2024-06-16</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
    </url>
 
    <url>
