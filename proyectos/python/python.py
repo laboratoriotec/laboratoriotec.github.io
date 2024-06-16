@@ -36,4 +36,4 @@ folium.Marker(location = [4.259260506664182, 72.98206776410422], popup="Kuramath
 folium.Marker(location = [54.95157918649025, -2.6775658422600577],
               icon = folium.Icon(icon= "flag", color = "red")).add_to(m)
 
-m.save('/home/vant/Documentos/Desarrollo/webs/laboratoriotech/proyectos/python/map.html')
+m.save('/ruta/directorio/deseado/map.html')
