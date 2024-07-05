@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7ce472d993ccffd2c15ec27b2e964c76 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7ce472d993ccffd2c15ec27b2e964c76" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7ce472d993ccffd2c15ec27b2e964c76 = L.map(
+                "map_7ce472d993ccffd2c15ec27b2e964c76",
+                {
+                    center: [39.69233226005567, 3.02696102105038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4ca641a03b8d49c6bc9197e8642befda = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var marker_7ee788056d10121e89894e574a5033c2 = L.marker(
+                [39.536359611911685, 3.3302804239719497],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_2ba47ae9f7b1efdf416eea7683e951b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7ee788056d10121e89894e574a5033c2.setIcon(icon_2ba47ae9f7b1efdf416eea7683e951b0);
+        
+    
+        var popup_0c4d69268f129d0fecab88918e155eae = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5c2966bfa2a7b36cc0fe0dbf90ce3ecb = $(`<div id="html_5c2966bfa2a7b36cc0fe0dbf90ce3ecb" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Cuevas del drach</h4>         <img src="/proyectos/mallorca/recursos/coves.jpg" width="150" height="100"><br>         <a href="http://www.cuevasdeldrach.com/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_0c4d69268f129d0fecab88918e155eae.setContent(html_5c2966bfa2a7b36cc0fe0dbf90ce3ecb);
+            
+        
+
+        marker_7ee788056d10121e89894e574a5033c2.bindPopup(popup_0c4d69268f129d0fecab88918e155eae)
+        ;
+
+        
+    
+    
+            marker_7ee788056d10121e89894e574a5033c2.bindTooltip(
+                `<div>
+                     Cuevas del drach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87bb27f76ad0b707be06a89060f2818e = L.marker(
+                [39.56756130981906, 2.6483058395003938],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_47ecabf37eeedbb0c0b39d32d60848f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87bb27f76ad0b707be06a89060f2818e.setIcon(icon_47ecabf37eeedbb0c0b39d32d60848f0);
+        
+    
+        var popup_7dea12d518b79630b90c72f774e26e0d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6f7bd21c24bf746a401021c75d063b28 = $(`<div id="html_6f7bd21c24bf746a401021c75d063b28" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Catedral</h4>         <img src="/proyectos/mallorca/recursos/catedral.jpeg" width="150" height="100"><br>         <a href="https://www.catedraldemallorca.org/es/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_7dea12d518b79630b90c72f774e26e0d.setContent(html_6f7bd21c24bf746a401021c75d063b28);
+            
+        
+
+        marker_87bb27f76ad0b707be06a89060f2818e.bindPopup(popup_7dea12d518b79630b90c72f774e26e0d)
+        ;
+
+        
+    
+    
+            marker_87bb27f76ad0b707be06a89060f2818e.bindTooltip(
+                `<div>
+                     Catedral
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e159ac5adca3e401861323eafc92849 = L.marker(
+                [39.56399404986428, 2.6193883855329814],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_c1f2c912ee671c569678f44139427626 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "landmark", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5e159ac5adca3e401861323eafc92849.setIcon(icon_c1f2c912ee671c569678f44139427626);
+        
+    
+        var popup_107f5619477258c95c23353486b797c1 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f99c623d4de783909d2a652e36b86692 = $(`<div id="html_f99c623d4de783909d2a652e36b86692" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Castillo de Bellver</h4>         <img src="/proyectos/mallorca/recursos/castillo.jpeg" width="150" height="100"><br>         <a href="https://castelldebellver.palma.cat/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_107f5619477258c95c23353486b797c1.setContent(html_f99c623d4de783909d2a652e36b86692);
+            
+        
+
+        marker_5e159ac5adca3e401861323eafc92849.bindPopup(popup_107f5619477258c95c23353486b797c1)
+        ;
+
+        
+    
+    
+            marker_5e159ac5adca3e401861323eafc92849.bindTooltip(
+                `<div>
+                     Castillo de Bellver
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b76f92770d2e4548cfa4bc6e539bf84c = L.marker(
+                [39.34250783215909, 2.986478752984238],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_e9b1a27eda72d6211c7e7713d8339542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "umbrella-beach", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_b76f92770d2e4548cfa4bc6e539bf84c.setIcon(icon_e9b1a27eda72d6211c7e7713d8339542);
+        
+    
+        var popup_fd1a5b3514cf2a31cab7afc0c33b6d30 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_057e1a514a3d98d5b726fba92d23dcd6 = $(`<div id="html_057e1a514a3d98d5b726fba92d23dcd6" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Playa des Trenc</h4>         <img src="/proyectos/mallorca/recursos/estrenc.jpg" width="150" height="100"><br>         <a href="https://www.viveremaiorca.com/es/que-ver/playas/es-trenc-2/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_fd1a5b3514cf2a31cab7afc0c33b6d30.setContent(html_057e1a514a3d98d5b726fba92d23dcd6);
+            
+        
+
+        marker_b76f92770d2e4548cfa4bc6e539bf84c.bindPopup(popup_fd1a5b3514cf2a31cab7afc0c33b6d30)
+        ;
+
+        
+    
+    
+            marker_b76f92770d2e4548cfa4bc6e539bf84c.bindTooltip(
+                `<div>
+                     Playa des Trenc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39904147edb84b444c7737980e07185d = L.marker(
+                [39.35280449037343, 3.1883580546376966],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_54cf16dd1f81d4720e990fce45458ab7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "umbrella-beach", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_39904147edb84b444c7737980e07185d.setIcon(icon_54cf16dd1f81d4720e990fce45458ab7);
+        
+    
+        var popup_603982ca68ba33e2890c084d8d5dc598 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_705dd99d9cf466008827d3b801b73938 = $(`<div id="html_705dd99d9cf466008827d3b801b73938" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Cala Mondragó</h4>         <img src="/proyectos/mallorca/recursos/calamondrago.jpeg" width="150" height="100"><br>         <a href="https://www.viveremaiorca.com/es/que-ver/playas/cala-mondrago-2/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_603982ca68ba33e2890c084d8d5dc598.setContent(html_705dd99d9cf466008827d3b801b73938);
+            
+        
+
+        marker_39904147edb84b444c7737980e07185d.bindPopup(popup_603982ca68ba33e2890c084d8d5dc598)
+        ;
+
+        
+    
+    
+            marker_39904147edb84b444c7737980e07185d.bindTooltip(
+                `<div>
+                     Cala Mondragó
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33ca91ab5bf2a6bd8a7c3d1a05f94938 = L.marker(
+                [39.52630520995824, 2.750191336473778],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_c3e7f347f8808068bfff0a3bb24469bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "utensils", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_33ca91ab5bf2a6bd8a7c3d1a05f94938.setIcon(icon_c3e7f347f8808068bfff0a3bb24469bf);
+        
+    
+        var popup_30a7c6b5eb231cba498caa28caab5fae = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_de22391cdf1743b5a656c75b20e6b312 = $(`<div id="html_de22391cdf1743b5a656c75b20e6b312" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Ca'n Torrat</h4>         <img src="/proyectos/mallorca/recursos/cantorrat.jpeg" width="150" height="100"><br>         <a href="https://www.cantorrat.com/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_30a7c6b5eb231cba498caa28caab5fae.setContent(html_de22391cdf1743b5a656c75b20e6b312);
+            
+        
+
+        marker_33ca91ab5bf2a6bd8a7c3d1a05f94938.bindPopup(popup_30a7c6b5eb231cba498caa28caab5fae)
+        ;
+
+        
+    
+    
+            marker_33ca91ab5bf2a6bd8a7c3d1a05f94938.bindTooltip(
+                `<div>
+                     Ca'n Torrat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ad8dbe900b992ab31e080e6ea404041 = L.marker(
+                [39.55041558753974, 2.691267870188287],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_5611c0278dfc71e82ee9fdc09994bac5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "utensils", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_9ad8dbe900b992ab31e080e6ea404041.setIcon(icon_5611c0278dfc71e82ee9fdc09994bac5);
+        
+    
+        var popup_a74a5e497f816eca3965e670b4888296 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_af9e2f5ab28d9be8cbff3ce8c139099b = $(`<div id="html_af9e2f5ab28d9be8cbff3ce8c139099b" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Restaurante El Bungalow</h4>         <img src="/proyectos/mallorca/recursos/bungalow.jpg" width="150" height="100"><br>         <a href="https://www.haztucartadigital.com/restaurante-el-bungalow-ciudad-jardin" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_a74a5e497f816eca3965e670b4888296.setContent(html_af9e2f5ab28d9be8cbff3ce8c139099b);
+            
+        
+
+        marker_9ad8dbe900b992ab31e080e6ea404041.bindPopup(popup_a74a5e497f816eca3965e670b4888296)
+        ;
+
+        
+    
+    
+            marker_9ad8dbe900b992ab31e080e6ea404041.bindTooltip(
+                `<div>
+                     Restaurante El Bungalow
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81fa16be9ce23930acb98730d0942bd2 = L.marker(
+                [39.709982922202975, 2.6215317340468167],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_87e761d47ca668b3fb047404048990b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_81fa16be9ce23930acb98730d0942bd2.setIcon(icon_87e761d47ca668b3fb047404048990b1);
+        
+    
+        var popup_fca57754b7a0057b9b2062b246ce9897 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e9841982403c99166a319a4e50e0f20d = $(`<div id="html_e9841982403c99166a319a4e50e0f20d" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Valldemossa</h4>         <img src="/proyectos/mallorca/recursos/valldemossa.jpeg" width="150" height="100"><br>         <a href="https://ajvalldemossa.net/es" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_fca57754b7a0057b9b2062b246ce9897.setContent(html_e9841982403c99166a319a4e50e0f20d);
+            
+        
+
+        marker_81fa16be9ce23930acb98730d0942bd2.bindPopup(popup_fca57754b7a0057b9b2062b246ce9897)
+        ;
+
+        
+    
+    
+            marker_81fa16be9ce23930acb98730d0942bd2.bindTooltip(
+                `<div>
+                     Valldemossa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21aa6d2199290d58ce158df34461bf22 = L.marker(
+                [39.78210921472931, 2.7406938863278953],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_878f48db9265ae7891d4745ba2028b88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_21aa6d2199290d58ce158df34461bf22.setIcon(icon_878f48db9265ae7891d4745ba2028b88);
+        
+    
+        var popup_ab92bab75f18ae8f7669e13163a34153 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_1f7993e152f48d35c03611a76fe2e2c5 = $(`<div id="html_1f7993e152f48d35c03611a76fe2e2c5" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Fornalutx</h4>         <img src="/proyectos/mallorca/recursos/fornalutx.webp" width="150" height="100"><br>         <a href="https://www.ajfornalutx.net/es" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_ab92bab75f18ae8f7669e13163a34153.setContent(html_1f7993e152f48d35c03611a76fe2e2c5);
+            
+        
+
+        marker_21aa6d2199290d58ce158df34461bf22.bindPopup(popup_ab92bab75f18ae8f7669e13163a34153)
+        ;
+
+        
+    
+    
+            marker_21aa6d2199290d58ce158df34461bf22.bindTooltip(
+                `<div>
+                     Fornalutx
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b34e958aa3c6b33515412c25294124d = L.marker(
+                [39.767143848482064, 2.7161658625927068],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_b4167123a4374d32e869d3607c3d3e96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_7b34e958aa3c6b33515412c25294124d.setIcon(icon_b4167123a4374d32e869d3607c3d3e96);
+        
+    
+        var popup_1073a25a8c68772cb7b6cea9ed5ec6b5 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d47211c6b89d83f5c2cefe099abdb78e = $(`<div id="html_d47211c6b89d83f5c2cefe099abdb78e" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Sóller</h4>         <img src="/proyectos/mallorca/recursos/soller.jpg" width="150" height="100"><br>         <a href="https://soller.es/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_1073a25a8c68772cb7b6cea9ed5ec6b5.setContent(html_d47211c6b89d83f5c2cefe099abdb78e);
+            
+        
+
+        marker_7b34e958aa3c6b33515412c25294124d.bindPopup(popup_1073a25a8c68772cb7b6cea9ed5ec6b5)
+        ;
+
+        
+    
+    
+            marker_7b34e958aa3c6b33515412c25294124d.bindTooltip(
+                `<div>
+                     Sóller
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c1705db46885685f8cca4cf0724c94a = L.marker(
+                [39.55309881790235, 2.694096910663844],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_c739dc6ec4d54ce9590cbd629cb04b70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bread-slice", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_9c1705db46885685f8cca4cf0724c94a.setIcon(icon_c739dc6ec4d54ce9590cbd629cb04b70);
+        
+    
+        var popup_1858cf1d513c405d861bcce65a2ca6cb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d7368b3f6731a80e83136ad3ee51e06a = $(`<div id="html_d7368b3f6731a80e83136ad3ee51e06a" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Bocagua</h4>         <img src="/proyectos/mallorca/recursos/bocagua.jpg" width="150" height="100"><br>         <a href="https://www.instagram.com/_bocagua/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_1858cf1d513c405d861bcce65a2ca6cb.setContent(html_d7368b3f6731a80e83136ad3ee51e06a);
+            
+        
+
+        marker_9c1705db46885685f8cca4cf0724c94a.bindPopup(popup_1858cf1d513c405d861bcce65a2ca6cb)
+        ;
+
+        
+    
+    
+            marker_9c1705db46885685f8cca4cf0724c94a.bindTooltip(
+                `<div>
+                     Bocagua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75b11fcb2fdf83027804f0c155fc26f8 = L.marker(
+                [39.57195363820514, 2.654539835914916],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_330629be43c61d259824279638feafd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bread-slice", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_75b11fcb2fdf83027804f0c155fc26f8.setIcon(icon_330629be43c61d259824279638feafd0);
+        
+    
+        var popup_e9e5b898db4d638ceb2ef9d112995c5f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0eddbb7acb942a96951d0fe2d1c50582 = $(`<div id="html_0eddbb7acb942a96951d0fe2d1c50582" style="width: 100.0%; height: 100.0%;">     <div>         <h4>La Petite Boulangerie</h4>         <img src="/proyectos/mallorca/recursos/boulangerie.jpeg" width="150" height="100"><br>         <a href="https://www.instagram.com/lapetiteboulangerie_palma/p/C8uCXnjNsCc/?img_index=1" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_e9e5b898db4d638ceb2ef9d112995c5f.setContent(html_0eddbb7acb942a96951d0fe2d1c50582);
+            
+        
+
+        marker_75b11fcb2fdf83027804f0c155fc26f8.bindPopup(popup_e9e5b898db4d638ceb2ef9d112995c5f)
+        ;
+
+        
+    
+    
+            marker_75b11fcb2fdf83027804f0c155fc26f8.bindTooltip(
+                `<div>
+                     La Petite Boulangerie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19f6c4542086b3aa2422e9635375cab3 = L.marker(
+                [39.53153966930979, 2.7295828413515437],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_e5d16a70d8cf79770cc3f899e2a4cd05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "face-smile", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_19f6c4542086b3aa2422e9635375cab3.setIcon(icon_e5d16a70d8cf79770cc3f899e2a4cd05);
+        
+    
+        var popup_0e264fd22ab07d02cd2253ffed6c1cbf = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_9020aad0f680bb894d42415664966e36 = $(`<div id="html_9020aad0f680bb894d42415664966e36" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Palma Aquarium</h4>         <img src="/proyectos/mallorca/recursos/aquarium.jpeg" width="150" height="100"><br>         <a href="https://tickets.palmaaquarium.com/es/?utm_source=gmybusiness&utm_medium=boton_site&utm_campaign=enlace_web" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_0e264fd22ab07d02cd2253ffed6c1cbf.setContent(html_9020aad0f680bb894d42415664966e36);
+            
+        
+
+        marker_19f6c4542086b3aa2422e9635375cab3.bindPopup(popup_0e264fd22ab07d02cd2253ffed6c1cbf)
+        ;
+
+        
+    
+    
+            marker_19f6c4542086b3aa2422e9635375cab3.bindTooltip(
+                `<div>
+                     Palma Aquarium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3a0c700b9ffff1a65993324cabe0ff6 = L.marker(
+                [39.49630129995113, 2.7603832597812303],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_5db972a56cc98027a38475c37cb1fc9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "face-smile", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f3a0c700b9ffff1a65993324cabe0ff6.setIcon(icon_5db972a56cc98027a38475c37cb1fc9f);
+        
+    
+        var popup_cc3e04a0007d80f25ef519e6bf496a98 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_2524e109161362733d09fc0749d9a2be = $(`<div id="html_2524e109161362733d09fc0749d9a2be" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Aqualand</h4>         <img src="/proyectos/mallorca/recursos/aqualand.jpeg" width="150" height="100"><br>         <a href="https://www.aqualand.es/elarenal" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_cc3e04a0007d80f25ef519e6bf496a98.setContent(html_2524e109161362733d09fc0749d9a2be);
+            
+        
+
+        marker_f3a0c700b9ffff1a65993324cabe0ff6.bindPopup(popup_cc3e04a0007d80f25ef519e6bf496a98)
+        ;
+
+        
+    
+    
+            marker_f3a0c700b9ffff1a65993324cabe0ff6.bindTooltip(
+                `<div>
+                     Aqualand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20b8a2518c04446b4ad77753a5501148 = L.marker(
+                [39.57006922592635, 2.6495872683365467],
+                {}
+            ).addTo(map_7ce472d993ccffd2c15ec27b2e964c76);
+        
+    
+            var icon_abefec16e7fa53465041d280c8024580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ice-cream", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_20b8a2518c04446b4ad77753a5501148.setIcon(icon_abefec16e7fa53465041d280c8024580);
+        
+    
+        var popup_8f047eba8cf9f73f1696214f5813c1dd = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c3bdc66966ce077537e17170f5845304 = $(`<div id="html_c3bdc66966ce077537e17170f5845304" style="width: 100.0%; height: 100.0%;">     <div>         <h4>Giovanni L.</h4>         <img src="/proyectos/mallorca/recursos/giovanni.jpg" width="150" height="100"><br>         <a href="http://giovannil.com/" target="_blank">Más información</a>     </div>     </div>`)[0];
+                popup_8f047eba8cf9f73f1696214f5813c1dd.setContent(html_c3bdc66966ce077537e17170f5845304);
+            
+        
+
+        marker_20b8a2518c04446b4ad77753a5501148.bindPopup(popup_8f047eba8cf9f73f1696214f5813c1dd)
+        ;
+
+        
+    
+    
+            marker_20b8a2518c04446b4ad77753a5501148.bindTooltip(
+                `<div>
+                     Giovanni L.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
